@@ -1,0 +1,159 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+
+
+    tools:context="br.liveo.ndrawer.ui.activity.OtherEvents">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/specialinterest1final"
+            android:weightSum="1">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+
+                android:text="Special Interest Group(SIG)"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:onClick="onClick"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                android:background="#99FF9900"
+
+                android:id="@+id/otherevents_tv1"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/ren1final"
+            android:weightSum="1">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:onClick="onClick"
+                android:text="Workshops"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                android:background="#996599ff"
+
+                android:id="@+id/otherevents_tv2"
+
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/guestlec1"
+            android:weightSum="1">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:onClick="onClick"
+                android:text="Guest Lectures"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                android:background="#99ffde00"
+
+                android:id="@+id/otherevents_tv3"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:background="@drawable/wor2final"
+            android:weightSum="1">
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:onClick="onClick"
+                android:text="Industrial Visits"
+                android:textColor="#ffffff"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center"
+
+                android:background="#99097054"
+
+                android:id="@+id/otherevents_tv4"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

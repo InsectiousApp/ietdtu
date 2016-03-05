@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   ~ Copyright 2015 Rudson Lima
+
+   ~ Licensed under the Apache License, Version 2.0 (the "License");
+   ~ you may not use this file except in compliance with the License.
+   ~ You may obtain a copy of the License at
+
+   ~ http://www.apache.org/licenses/LICENSE-2.0
+
+   ~ Unless required by applicable law or agreed to in writing, software
+   ~ distributed under the License is distributed on an "AS IS" BASIS,
+   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   ~ See the License for the specific language governing permissions and
+   ~ limitations under the License.
+-->
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/movingimage_relativelayout"
+
+
+    >
+    <net.grobas.view.MovingImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+
+        android:src="@drawable/ren1final"
+        app:miv_load_on_create="true"
+
+        app:miv_min_relative_offset="6"
+        app:miv_repetitions="-1"
+        app:miv_speed="30"
+        app:miv_start_delay="400"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:padding="20dp"
+
+        android:textSize="24dp"
+        android:gravity="center_horizontal|top"
+        android:background="#66000000"
+        android:id="@+id/tv_mai"
+
+        />
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/rll1"
+        android:layout_gravity="center">
+
+<ImageView
+    android:id="@+id/imgLiveo1"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:contentDescription="@string/clear"
+    android:background="@drawable/ietfinalicon"
+    android:onClick="onClick"
+    android:layout_marginLeft="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="0dp"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+<TextView
+    android:id="@+id/txtTitle1"
+    android:layout_width="90dp"
+    android:layout_height="wrap_content"
+    android:textSize="17dp"
+    android:gravity="center"
+    android:textColor="#ffffff"
+    android:text="IET"
+    android:textStyle="bold"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_below="@+id/imgLiveo1"
+    android:layout_alignLeft="@+id/imgLiveo1"
+    android:layout_alignStart="@+id/imgLiveo1"
+    android:paddingBottom="30dp" />
+
+<ImageView
+    android:id="@+id/imgLiveo2"
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:onClick="onClick"
+    android:contentDescription="@string/clear"
+    android:src="@drawable/ietdtufinalicon"
+    android:layout_above="@+id/txtTitle2"
+    android:layout_marginRight="30dp"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_alignTop="@+id/imgLiveo6" />
+
+<TextView
+    android:id="@+id/txtTitle2"
+    android:layout_width="110dp"
+    android:textSize="17dp"
+    android:textStyle="bold"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="#ffffff"
+    android:text="IET DTU"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_alignTop="@+id/txtTitle1"
+    android:layout_alignLeft="@+id/imgLiveo2"
+    android:layout_alignStart="@+id/imgLiveo2" />
+
+
+
+
+<ImageView
+    android:id="@+id/imgLiveo3"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:contentDescription="@string/clear"
+    android:onClick="onClick"
+    android:src="@drawable/renaisanceicon"
+    android:paddingRight="20dp"
+    android:layout_below="@+id/txtTitle1"
+    android:layout_alignRight="@+id/txtTitle3"
+    android:layout_alignEnd="@+id/txtTitle3" />
+
+<TextView
+    android:id="@+id/txtTitle3"
+    android:layout_width="110dp"
+    android:textSize="17dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textColor="#ffffff"
+    android:textStyle="bold"
+    android:text="Renaissance"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_below="@+id/imgLiveo3"
+    android:layout_alignLeft="@+id/txtTitle1"
+    android:layout_alignStart="@+id/txtTitle1" />
+
+<ImageView
+    android:id="@+id/imgLiveo4"
+    android:layout_width="90dp"
+    android:layout_height="90dp"
+    android:onClick="onClick"
+    android:contentDescription="@string/clear"
+    android:src="@drawable/armageddonicon"
+
+    android:layout_alignTop="@+id/imgLiveo3"
+    android:layout_alignLeft="@+id/txtTitle2"
+    android:layout_alignStart="@+id/txtTitle2"
+    android:paddingLeft="20dp" />
+
+<TextView
+    android:id="@+id/txtTitle4"
+    android:layout_width="110dp"
+    android:textSize="17dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    android:text="Armageddon"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_below="@+id/imgLiveo4"
+    android:layout_alignLeft="@+id/imgLiveo4"
+    android:layout_alignStart="@+id/imgLiveo4" />
+
+
+
+
+<ImageView
+    android:id="@+id/imgLiveo5"
+    android:layout_width="110dp"
+    android:layout_height="110dp"
+    android:contentDescription="@string/clear"
+    android:src="@drawable/ietbenifits123"
+    android:onClick="onClick"
+    android:layout_alignTop="@+id/imgLiveo1"
+    android:layout_toRightOf="@+id/txtTitle3"
+    android:layout_toEndOf="@+id/txtTitle3"
+    android:layout_marginLeft="30dp" />
+
+<TextView
+    android:id="@+id/txtTitle5"
+    android:layout_width="110dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="17dp"
+    android:textStyle="bold"
+    android:textColor="#ffffff"
+    android:text="Benifits"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:layout_below="@+id/imgLiveo6"
+    android:layout_alignLeft="@+id/imgLiveo5"
+    android:layout_alignStart="@+id/imgLiveo5" />
+
+<ImageView
+        android:id="@+id/imgLiveo6"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:onClick="onClick"
+        android:contentDescription="@string/clear"
+        android:src="@drawable/mmmbrrshppp"
+    android:paddingLeft="20dp"
+    android:layout_marginRight="55dp"
+    android:layout_marginEnd="42dp"
+    android:layout_above="@+id/txtTitle2"
+    android:layout_toLeftOf="@+id/imgLiveo2"
+    android:layout_toStartOf="@+id/imgLiveo2" />
+
+        <TextView
+            android:id="@+id/txtTitle6"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="Membership Plan"
+            android:textStyle="bold"
+
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@+id/imgLiveo6"
+            android:layout_alignLeft="@+id/imgLiveo6"
+            android:layout_alignStart="@+id/imgLiveo6" />
+
+        <ImageView
+            android:id="@+id/imgLiveo7"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:paddingRight="20dp"
+            android:contentDescription="@string/clear"
+            android:onClick="onClick"
+
+            android:src="@drawable/eventsfinal1234"
+            android:layout_above="@+id/txtTitle3"
+            android:layout_alignRight="@+id/imgLiveo5"
+            android:layout_alignEnd="@+id/imgLiveo5" />
+
+        <TextView
+            android:id="@+id/txtTitle7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="Other Events"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignBottom="@+id/txtTitle3"
+            android:layout_alignRight="@+id/imgLiveo7"
+            android:layout_alignEnd="@+id/imgLiveo7" />
+
+        <ImageView
+            android:id="@+id/imgLiveo8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:onClick="onClick"
+            android:paddingTop="10dp"
+            android:contentDescription="@string/clear"
+            android:src="@drawable/council"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="20dp"
+            android:layout_alignTop="@+id/imgLiveo7"
+            android:layout_alignLeft="@+id/txtTitle6"
+            android:layout_alignStart="@+id/txtTitle6"
+           />
+
+        <TextView
+            android:id="@+id/txtTitle8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:text="Council"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="top|center_horizontal"
+            android:layout_below="@+id/imgLiveo7"
+            android:layout_alignRight="@+id/imgLiveo8"
+            android:layout_alignEnd="@+id/imgLiveo8" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>
+
+
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+
+        android:translationZ="1dp"
+        card_view:cardElevation="10dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+
+
+            android:background="#E6FF9900"
+
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+
+                android:layout_weight="1"
+
+
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:text="Special Interest Group"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp" />
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="The IET DTU chapter conducted SIGs over a wide range of topics throughout the year from the fields of Electrical, Electronics as well as Information Technology, a number of which were open for all students, while others were held only for the society members.
+The SIGs conducted in the precious session included topics from the field of robotics such as Mechanical Robot, Radio Frequency Robot and Line Follower Robot which were covered and discussed in detail, also LFR robots were built using arduino uno microcontroller boards
+SIGs on web development and designing were also conducted under which introductory web development classes were taken in coding using HTML, CSS, PHP languages so as to promote as well as inculcate good coding culture in college, also SIGs on Photoshop and Matlab were held. SIGs on Autocad were organised for the students of Electrical and Mechanical department"
+                android:textSize="12dp"
+
+                android:background="#ba68c8"
+                android:textColor="#ffffff"
+                android:layout_weight="4"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   ~ Copyright 2015 Rudson Lima
+
+   ~ Licensed under the Apache License, Version 2.0 (the "License");
+   ~ you may not use this file except in compliance with the License.
+   ~ You may obtain a copy of the License at
+
+   ~ http://www.apache.org/licenses/LICENSE-2.0
+
+   ~ Unless required by applicable law or agreed to in writing, software
+   ~ distributed under the License is distributed on an "AS IS" BASIS,
+   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   ~ See the License for the specific language governing permissions and
+   ~ limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.liveo.ndrawer" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/bb2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/myTheme" >
+        <receiver android:name=".ui.fragment.InternetReciever" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".ui.fragment.MyinternetService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/myTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name2"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.activity.SettingsActivity"
+            android:label="@string/settings" >
+        </activity>
+        <activity
+            android:name=".ui.activity.MainActivityDemo"
+            android:label="@string/title_activity_main_activity_demo" >
+        </activity>
+        <activity
+            android:name=".Ietdtu1FlexiSpace"
+            android:label="@string/title_activity_ietdtu1_flexi_space" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CouncilList"
+            android:label="@string/title_activity_ietdtu1_flexi_space" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.Armageddon"
+            android:label="@string/title_activity_events" >
+        </activity>
+        <activity
+            android:name=".DetailsActivity"
+            android:label="DetailsActivity" >
+        </activity>
+        <activity
+            android:name=".ui.activity.DetailsActivity2"
+            android:label="@string/title_activity_details_activity2" >
+        </activity>
+        <activity
+            android:name=".ui.activity.Renaissance"
+            android:label="@string/title_activity_renaissance" >
+        </activity>
+        <activity
+            android:name=".ui.activity.OtherEvents"
+            android:label="@string/title_activity_other_events"
+
+
+            >
+        </activity>
+    </application>
+
+</manifest>
