@@ -9,8 +9,10 @@ public class NoteSquliteOpenHelper extends SQLiteOpenHelper {
 
     public static final String NOTE="note";
     public static final String NOTE_INFO="note_info";
+    public int check_currentstreak=1;
     public static final String _ID="id";
-    public static final String DATABASE="squlitenote";
+    public static final String 
+DATABASE="squlitenote";
 
     public NoteSquliteOpenHelper(Context context) {
         super(context, DATABASE, null, 1);
